@@ -8,7 +8,8 @@ local favorites = {
     ["Lava"] = {2,2,2},
     ["Lava Return"] = {2,2,1},
     ["Snow Balls"] = {1,4,1},
-    ["Waste"] = {15,15,15}
+    ["Waste"] = {15,15,15},
+    ["Rocks"] = {8,8,8},
 }
 local fkeys = {}
 for k,v in pairs(favorites) do
