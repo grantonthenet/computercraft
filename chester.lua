@@ -1,3 +1,4 @@
+-- touchscreen ender storage configurator with favorites/bookmarks
 -- this one requires sc-peripherals, which is a switchcraft thing (sc3.io)
 local chest = peripheral.wrap("ender_storage_6203")
 local monitor = peripheral.wrap("left")
