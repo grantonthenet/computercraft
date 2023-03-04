@@ -8,7 +8,8 @@ local sources = {
 local dst = "sc-goodies:iron_barrel_125"
 
 while true do
-    sleep(0)
+    os.queueEvent("pipe")
+    os.pullEvent("pipe")
     -- go through sources
     for si=1,#sources do
         -- wrap source, list items
