@@ -1,7 +1,7 @@
 -- touchscreen ender storage configurator with favorites/bookmarks
 -- this one requires sc-peripherals, which is a switchcraft thing (sc3.io)
-local chest = peripheral.wrap("ender_storage_6203")
-local monitor = peripheral.wrap("left")
+local chest = peripheral.wrap("left")
+local monitor = peripheral.wrap("monitor_611")
 monitor.setTextScale(0.5)
 monitor.clear()
 
@@ -9,8 +9,11 @@ local favorites = {
     ["Lava"] = {2,2,2},
     ["Lava Return"] = {2,2,1},
     ["Snow Balls"] = {1,4,1},
+    ["Snow Blocks"] = {1,12,1},
     ["Waste"] = {15,15,15},
+    ["Ender Pearls"] = {1,1,1},
     ["Rocks"] = {8,8,8},
+    ["Cooked Cod"] = {5,1,5},
 }
 local fkeys = {}
 for k,v in pairs(favorites) do
@@ -105,7 +108,10 @@ end end, function() while true do
     if showFavs then
         if y <= #fkeys then
             showFavs = false
-            channel = favorites[fkeys[y]]
+            local selFav = favorites[fkeys[y]]
+            channel[1] = selFav[1]
+            channel[2] = selFav[2]
+            channel[3] = selFav[3]
         end
     elseif y > 1 and y < 10 then
         channel[selection] = x
