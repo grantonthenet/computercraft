@@ -1,5 +1,5 @@
 # computercraft
-junk i've made for cc, mainly on switchcraft
+junk i've made for cc, mainly on switchcraft. pull requests welcome if something bothers you enough
 
 | file                                 | description                                                     |
 | ------------------------------------ | --------------------------------------------------------------- |
